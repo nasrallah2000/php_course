@@ -35,28 +35,45 @@
 
 // The '',0,[],array() values are false when convert it to bool
 
-var_dump((bool) '');
-echo '<br>';
-var_dump((bool) 0);
-echo '<br>';
-var_dump((bool) []);
-echo '<br>';
-var_dump((bool) array());
-echo '<br>';
+// var_dump((bool) '');
+// echo '<br>';
+// var_dump((bool) 0);
+// echo '<br>';
+// var_dump((bool) []);
+// echo '<br>';
+// var_dump((bool) array());
+// echo '<br>';
 
 // another values are ture when convert it
 
-echo '<br>';
-var_dump((bool) 'nasrallah');
-echo '<br>';
-var_dump((bool) 15);
-echo '<br>';
-var_dump((bool) [2,1]);
-echo '<br>';
-var_dump((bool) array(9,9));
-echo '<br>';
+// echo '<br>';
+// var_dump((bool) 'nasrallah');
+// echo '<br>';
+// var_dump((bool) 15);
+// echo '<br>';
+// var_dump((bool) [2,1]);
+// echo '<br>';
+// var_dump((bool) array(9,9));
+// echo '<br>';
 
+///////////////////////////////////
+/// Escaping in php
 
+echo 'Hello in PHP';
+echo "<br>";
+echo 'Hello in \'PHP\'';
+echo "<br>";
+echo "Hello in \tPHP";
+echo "<br>";
+echo "Hello in PHP\\";
+echo "<br>";
+echo "Hello in PHP 
+in Multiple 
+Lines";
+echo "<br>";
+echo nl2br("Hello in PHP 
+in Multiple 
+Lines");
 
 
 
