@@ -59,23 +59,61 @@
 ///////////////////////////////////
 /// Escaping in php
 
-echo 'Hello in PHP';
-echo "<br>";
-echo 'Hello in \'PHP\'';
-echo "<br>";
-echo "Hello in \tPHP";
-echo "<br>";
-echo "Hello in PHP\\";
-echo "<br>";
-echo "Hello in PHP 
-in Multiple 
-Lines";
-echo "<br>";
-echo nl2br("Hello in PHP 
-in Multiple 
-Lines");
+// echo 'Hello in PHP';
+// echo "<br>";
+// echo 'Hello in \'PHP\'';
+// echo "<br>";
+// echo "Hello in \tPHP";
+// echo "<br>";
+// echo "Hello in PHP\\";
+// echo "<br>";
+// echo "Hello in PHP 
+// in Multiple 
+// Lines";
+// echo "<br>";
+// echo nl2br("Hello in PHP 
+// in Multiple 
+// Lines");
 
+//////////////////////////
+// Heredoc & Nowdoc
 
+// $name = 'Nasrallah';
 
+// echo <<< "Here"
+// Hello Php
+// Special Characters $$$$ ''''' """"" ////
+// My Name is $name
+// Here;
 
+// echo "<br>";
 
+// echo <<< 'Now'
+// Hello Php
+// Special Characters $$$$ ''''' """"" ////
+// My Name is $name
+// Now;
+
+//////////////////////////////
+///// complex array
+
+echo "<pre>";
+print_r([
+    "Abdallah",
+    "A" => "Nasrallah",
+    "B" => "Ahmed",
+    "Khaled",
+    1 => "New name(First overrid)", // That make override to 1 index
+    2 => "Anas",
+    True => "Mohamed(Second overrid)", // That make override to 1 index
+    False => "Naeem(First overrid)",// That make override to 0 index
+    "Names" => [
+        "Ali",
+        "Omar",
+        "Ameer" => [
+            "Ronaldo",
+            "mms"
+        ],
+    ],
+]);
+echo "</pre>";
